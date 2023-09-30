@@ -1,0 +1,74 @@
+/* colors */
+@orange: #e03e1a;
+@orange-element: darken(@orange, 7%);
+@item-bg: lighten(lightgrey, 7%);
+
+@bg-color: white;
+@hover: black;
+
+.body {
+	.products-container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.card {
+			width: 90%;
+			max-width: none;
+		}
+		.btn-group {
+			position: absolute;
+			right: 2rem;
+			bottom: 1rem;
+			font-size: 2rem;
+			.btn-primary {
+				width: 3rem;
+				padding: 0;
+				border: 2px solid @orange-element;
+				background-color: @orange;
+				font-size: 2rem;
+				font-weight: bold;
+				color: @bg-color;
+				&:hover {
+					background-color: @orange-element;
+					color: @hover;
+				}
+			}
+			p {
+				margin: 0 1rem;
+			}
+		}
+	}
+	.order-containder {
+		position: relative;
+		height: 15rem;
+		width: 100%;
+		background-color: @item-bg;
+		border: 2px solid black;
+		border-radius: 1rem;
+		font-size: 2rem;
+		font-weight: bold;
+		.total-price {
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 3rem;
+		}
+		.buy-btn {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 1rem;
+			width: 80%;
+			height: 4rem;
+			border: 2px solid @orange-element;
+			border-radius: 1rem;
+			background-color: @orange;
+			font-weight: bold;
+			color: @bg-color;
+			&:hover {
+				background-color: @orange-element;
+				color: @hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+/* colors */
+@orange: #e03e1a;
+@orange-element: darken(@orange, 7%);
+@item-bg: lighten(lightgrey, 7%);
+
+@bg-color: white;
+@hover: black;
+
+.order {
+	margin-bottom: 2rem;
+	border: 2px solid black;
+	border-radius: 1rem;
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 6rem;
+		background-color: @orange;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+		border-bottom: inherit;
+		font-size: 3rem;
+		font-weight: bold;
+		color: @bg-color;
+		p {
+			margin: 0 1rem;
+		}
+		
+		.info-wrap, .price-wrap {
+			display: flex;
+		}
+	}
+}
+
+.card {
+	width: 90%;
+	max-width: none !important;
+	margin: 20px 0;
+
+	.quantity {
+		position: absolute;
+		right: 2rem;
+		bottom: 1rem;
+		font-size: 3rem;
+		font-weight: bold;
+		color: @orange;
+	}
+}

@@ -1,0 +1,62 @@
+/* colors */
+@orange: #e03e1a;
+@orange-element: darken(@orange, 7%);
+@item-bg: lighten(lightgrey, 7%);
+
+@bg-color: white;
+@hover: black;
+
+.body {
+	padding-top: 11rem;
+	.row {
+		justify-content: space-evenly;
+		.card {
+			min-height: 17rem;
+			max-width: 48%;
+			margin-bottom: 2rem;
+			background-color: @item-bg;
+			border: 2px solid black;
+			border-radius: 1rem;
+			.image-part {
+				display: flex;
+				flex-wrap: wrap;
+				align-content: center;
+				.image-wrap {
+					width: 100%;
+					height: 90%;
+					img {
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+			}
+			&-title {
+				font-size: 2.5rem;
+			}
+			&-text {
+				font-size: 1.5rem;
+			}
+			&-button {
+				position: absolute;
+				bottom: 1rem;
+				right: 1rem;
+				height: 3rem;
+				width: 13rem;
+				border: 2px solid @orange-element;
+				border-radius: 1rem;
+				background-color: @orange;
+				font-size: 1.7rem;
+				color: @bg-color;
+				&:hover {
+					background-color: @orange-element;
+					color: @hover;
+				}
+			}
+			.price {
+				color: green;
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+		}
+	}
+}

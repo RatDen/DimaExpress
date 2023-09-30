@@ -1,0 +1,47 @@
+/* colors */
+.order {
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.order-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  background-color: #e03e1a;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: inherit;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.order-header p {
+  margin: 0 1rem;
+}
+.order-header .info-wrap,
+.order-header .price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card {
+  width: 90%;
+  max-width: none !important;
+  margin: 20px 0;
+}
+.card .quantity {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e03e1a;
+}
